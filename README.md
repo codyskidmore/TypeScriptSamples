@@ -1,1 +1,1 @@
-# TypeScriptSamples
+# TypeScript Samples
