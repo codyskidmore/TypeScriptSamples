@@ -2,7 +2,9 @@
     "compilerOptions": {
         "target": "ES6",
         "strictNullChecks": true,
-        "outDir": "scripts"
+        "outDir": "scripts",
+        "outFile": "scripts/commonjs",
+        "module": "system"
     },
     "include": [
         "./src/*.ts"
