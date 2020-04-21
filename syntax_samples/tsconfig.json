@@ -3,7 +3,7 @@
         "target": "ES6",
         "strictNullChecks": true,
         "outDir": "scripts",
-        "outFile": "scripts/commonjs",
+        "outFile": "scripts/common.js",
         "module": "system"
     },
     "include": [
