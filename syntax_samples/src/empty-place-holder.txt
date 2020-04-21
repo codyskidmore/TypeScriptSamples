@@ -1,0 +1,1 @@
+Ensures the scripts folder gets created. This may not be necessary. I will investigate later.
