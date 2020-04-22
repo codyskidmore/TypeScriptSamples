@@ -3,7 +3,7 @@ class Human {
     constructor(name: string){
         this._name = name;
     }
-    getName(): string {
+    protected getName(): string {
         return this._name;
     }
     greet(): string {
@@ -25,6 +25,10 @@ class Hero extends Human {
     listSupePowers(): string[] {
         return this._superPowers;
     }
+
+    greetOverride(): string {
+        return super.getName();
+    } 
 }
 
 let batman: Hero = new Hero("Bruce");
