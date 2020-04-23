@@ -1,7 +1,7 @@
 import { IMove } from './interfaces';
 
 export class FlyHandler implements IMove {
-    move(): string {
-        return "flying ..";
+    move(character: string): string {
+        return `${character} is flying..`;
     }
 }

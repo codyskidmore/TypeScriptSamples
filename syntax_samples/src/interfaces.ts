@@ -4,10 +4,11 @@ export interface IMammal {
 }
 
 export interface IHero {
-    superpowers: string[];
+    superPowers: string[];
     getSuperPowers(): string[];    
+    addSuperPower(superPower: string): void;
 }
 
 export interface IMove {
-    move(): string;
+    move(character: string): string;
 }
