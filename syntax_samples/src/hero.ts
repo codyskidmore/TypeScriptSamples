@@ -9,7 +9,7 @@ export class Hero implements i.IMammal, i.IHero, i.IMove {
 
     getSuperPowers(): string[]{
         return this.superPowers;
-    }    
+    }
     addSuperPower(superPower: string): void {
         this.superPowers.push(superPower);
     }
