@@ -7,6 +7,7 @@ module.exports = {
         path: path.resolve(__dirname, './syntax_samples/scripts'),
         filename: './bundle.js'
     },
+    devtool: "inline-source-map",
     resolve: {
         extensions: ['.ts']
     },
