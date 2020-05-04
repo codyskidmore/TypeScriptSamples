@@ -3,11 +3,9 @@
         "target": "ES6"
         ,"strictNullChecks": true
         ,"outDir": "scripts"
-        ,"outFile": "scripts/bundle.js"
-        ,"module": "system"
-        ,"inlineSources": true
-        ,"inlineSourceMap": true
-//        ,"sourceMap": true
+        // ,"outFile": "scripts/common.js"
+        // ,"module": "system"
+        ,"sourceMap": true
     },
     "include": [
         "./src/*.ts"
