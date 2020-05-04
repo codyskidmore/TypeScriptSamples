@@ -7,11 +7,10 @@
 </head>
 <body>
     <!-- Getting a named register error using later versions. Will figure this out later. -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.21.0/system.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.js"></script>
+    <script src="bundle.js"></script>
     <script>
-        System.import('./bundle.js')
-        .then(() => System.import('app'))
-        .catch(console.error.bind(console));
+        require(['app']);
     </script>
 </body>
 </html>

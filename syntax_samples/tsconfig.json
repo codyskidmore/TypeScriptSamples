@@ -4,7 +4,7 @@
         ,"strictNullChecks": true
         ,"outDir": "scripts"
         ,"outFile": "scripts/bundle.js"
-        ,"module": "system"
+        ,"module": "amd"
         ,"inlineSources": true
         ,"inlineSourceMap": true
 //        ,"sourceMap": true
