@@ -53,7 +53,7 @@ for (let key in saleCount)
     storesBySaleCount[saleCount[key]].push(key);
 }
 
-// The output shows the number of sales a each store with that 
+// The output shows the number of sales and each store with that
 // number of sales (i.e. stores 2 & 5 had 3 sales, the rest had one sale).
 // 
 // Output: { '1': [ '1', '3', '4' ], '3': [ '2', '5' ] }
