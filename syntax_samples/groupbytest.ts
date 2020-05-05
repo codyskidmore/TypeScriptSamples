@@ -56,8 +56,10 @@ for (let key in saleCount)
 // The output shows the number of sales a each store with that 
 // number of sales (i.e. stores 2 & 5 had 3 sales, the rest had one sale).
 // 
-console.log(storesBySaleCount); // Output: { '1': [ '1', '3', '4' ], '3': [ '2', '5' ] }
+// Output: { '1': [ '1', '3', '4' ], '3': [ '2', '5' ] }
+console.log(storesBySaleCount); 
 
 // Get the actual store(s) with the highest number of sales..
+// Output: { salecount: '3', store_ids: [ '2', '5' ] }
 const maxkey = _.max(Object.keys(storesBySaleCount));
-console.log({salecount: maxkey, store_ids: storesBySaleCount[maxkey]}); // Output: { salecount: '3', store_ids: [ '2', '5' ] }
+console.log({salecount: maxkey, store_ids: storesBySaleCount[maxkey]}); 
