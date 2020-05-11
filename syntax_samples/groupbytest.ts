@@ -1,4 +1,4 @@
-import * as _ from 'lodash';
+import * as _ from './node_modules/lodash';
 
 class Sale {
     store_id: number
@@ -21,7 +21,7 @@ saleList.push(new Sale(5));
 saleList.push(new Sale(5));
 saleList.push(new Sale(2));
 
-let saleCount = {};
+let saleCount: { [key: number]: number } = {};
 
 // 1st we have to count sale instances.
 saleList.forEach(function(sale){
@@ -42,15 +42,17 @@ saleList.forEach(function(sale){
 //
 // The reason this code is slightly more
 // complicated is it must account for ties.
-let storesBySaleCount = {};
-for (let key in saleCount)
+let storesBySaleCount: { [key: number]: number[] } = {};
+for (const key in saleCount)
 {
-    if (!_.has(storesBySaleCount, saleCount[key]))
+    // Cannot figure out how to define key as number vs string
+    const _key = parseInt(key); 
+    if (!_.has(storesBySaleCount, saleCount[_key]))
     {
-        storesBySaleCount[saleCount[key]] = [key];
+        storesBySaleCount[saleCount[key]] = [_key];
         continue;
     }
-    storesBySaleCount[saleCount[key]].push(key);
+    storesBySaleCount[saleCount[key]].push(_key);
 }
 
 // The output shows the number of sales and each store with that
