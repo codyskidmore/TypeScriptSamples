@@ -21,7 +21,7 @@ saleList.push(new Sale(5));
 saleList.push(new Sale(5));
 saleList.push(new Sale(2));
 
-let saleCount: { [key: number]: number } = {};
+const saleCount: Record<number, number> = {}; //{ [key: number]: number } = {}; also works!
 
 // 1st we have to count sale instances.
 saleList.forEach(function(sale){
@@ -42,7 +42,7 @@ saleList.forEach(function(sale){
 //
 // The reason this code is slightly more
 // complicated is it must account for ties.
-let storesBySaleCount: { [key: number]: number[] } = {};
+let storesBySaleCount: Record<number, number[]> = {}; //{ [key: number]: number[] } = {}; also works!
 for (const key in saleCount)
 {
     // Cannot figure out how to define key as number vs string
